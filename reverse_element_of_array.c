@@ -9,6 +9,5 @@ int main(){
     printf("Reverse array is : ");
     for(i=0;i<10;i++){
         printf("%d",arr[i]);
-        printf("\n");
     }
 }
