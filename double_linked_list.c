@@ -14,3 +14,4 @@ struct node *addatend(struct node *start,int data);
 struct node *addafter(struct node *start,int data,int item);
 struct node *addbefore(struct node *start,int data,int item);
 struct node *del(struct node *start,int data);
+struct node *reverse(struct node *start);
