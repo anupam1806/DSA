@@ -68,7 +68,18 @@ int main()
             printf("%d",&data);
             printf("Enter the element before which to insert : ");
             scanf("%d",&item);
-            start=addbefore(start,data,item);    
+            start=addbefore(start,data,item);
+            break;
+        case 8:
+            printf("Enter the element to be deleted : ");
+            scanf("%d",&data);
+            start=del(start,data);
+            break;
+        case 9:
+            start = reverse(start);
+            break;
+        case 10:
+            exit(1);
         default:
             break;
         }
