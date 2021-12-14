@@ -22,5 +22,10 @@ int main()
     while(1)
     {
         printf("1.Create List\n");
+        printf("2.Display\n");
+        printf("3.Add to empty list\n");
+        printf("4.Add at beginning\n");
+        printf("5.Create List\n");
+        printf("1.Create List\n");
     }
 }
