@@ -15,3 +15,12 @@ struct node *addafter(struct node *start,int data,int item);
 struct node *addbefore(struct node *start,int data,int item);
 struct node *del(struct node *start,int data);
 struct node *reverse(struct node *start);
+int main()
+{
+    int choice,data,item;
+    struct node *start=NULL;
+    while(1)
+    {
+        printf("1.Create List\n");
+    }
+}
