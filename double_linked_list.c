@@ -30,5 +30,23 @@ int main()
         printf("7.Add before\n");
         printf("8.Delete\n");
         printf("9.Reverse\n");
+        printf("10.Quit\n");
+        printf("Enter your choice : ");
+        scanf("%d",&choice);
+
+        switch (choice)
+        {
+        case 1:
+            start=create_list(start);
+            break;
+        case 2:
+            display(start);
+            break;
+        case 3:
+            printf("Enter the element to be inserted : ");
+        
+        default:
+            break;
+        }
     }
 }
