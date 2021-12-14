@@ -29,6 +29,6 @@ int main()
         printf("6.Add after\n");
         printf("7.Add before\n");
         printf("8.Delete\n");
-        printf("9.Create List\n");
+        printf("9.Reverse\n");
     }
 }
