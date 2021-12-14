@@ -81,6 +81,7 @@ int main()
         case 10:
             exit(1);
         default:
+            printf("Wrong choice");
             break;
         }
     }
