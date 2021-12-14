@@ -65,7 +65,7 @@ int main()
             break;
         case 7:
             printf("Enter the element to be inserted : ");
-            printf("%d",&data);
+            scanf("%d",&data);
             printf("Enter the element before which to insert : ");
             scanf("%d",&item);
             start=addbefore(start,data,item);
