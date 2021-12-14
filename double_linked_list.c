@@ -27,5 +27,7 @@ int main()
         printf("4.Add at beginning\n");
         printf("5.Add at end\n");
         printf("6.Add after\n");
+        printf("7.Add before\n");
+        printf("1.Create List\n");
     }
 }
