@@ -57,7 +57,18 @@ int main()
             start=addatend(start,data);
             break;
         case 6:
-            printf("Enter the element to be inserted : ");        
+            printf("Enter the element to be inserted : ");
+            scanf("%d",&data);
+            printf("Enter the element after which to insert : ");
+            scanf("%d",&item);
+            start=addafter(start,data,item);
+            break;
+        case 7:
+            printf("Enter the element to be inserted : ");
+            printf("%d",&data);
+            printf("Enter the element before which to insert : ");
+            scanf("%d",&item);
+            start=addbefore(start,data,item);    
         default:
             break;
         }
