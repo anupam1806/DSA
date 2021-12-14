@@ -44,7 +44,20 @@ int main()
             break;
         case 3:
             printf("Enter the element to be inserted : ");
-        
+            scanf("%d",&data);
+            start=addtoempty(start,data);
+        case 4:
+            printf("zenter the element to be inserted : ");
+            scanf("%d",&data);
+            start=addatbeg(start,data);
+            break;
+        case 5:
+            printf("Enter the element to be inserted : ");
+            scanf("%d",&data);
+            start=addatend(start,data);
+            break;
+        case 6:
+            printf("Enter the element to be inserted : ");        
         default:
             break;
         }
