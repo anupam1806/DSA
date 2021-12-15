@@ -172,3 +172,13 @@ struct node *addafter(struct node *start,int data,int item){
     printf("%d not present in the list\n",item);
     return start;
 }
+struct node *addbefore(struct node *start,int data,int item){
+    struct node *tmp,*p;
+    if(start==NULL){
+        printf("List is empty\n");
+        return start;
+    }
+    if(start->info == item){
+        tmp = (struct node *)malloc(sizeof(struct node));
+    }
+}
