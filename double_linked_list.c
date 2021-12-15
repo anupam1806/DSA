@@ -84,5 +84,20 @@ int main()
             printf("Wrong choice");
             break;
         }
-    }
+    } 
 }
+void display(struct node *start){
+        struct node *p;
+        if(start==NULL){
+            printf("List is empty\n");
+            return;
+        }
+        p=start;
+        printf("List is : \n");
+        while (p!=0)
+        {
+            printf("%d ",p->info);
+            p=p->next;
+        }
+        printf("\n");
+    }
