@@ -137,3 +137,17 @@ struct node *addtoempty(struct node *start,int data){
     start=tmp;
     return start;
 }
+struct node *addatend(struct node *start,int data){
+    struct node *tmp,*p;
+    tmp = (struct node *)malloc(sizeof(struct node));
+    tmp->info=data;
+    p=start;
+    while (p->next!=NULL)
+    {
+        p=p->next;
+    }
+    p->next=tmp;
+    tmp->prev=p;
+    tmp->next=NULL;
+    return start;
+}
