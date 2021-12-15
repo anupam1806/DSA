@@ -118,3 +118,22 @@ struct node *create_list(struct node *start){
     }
     return start;
 }
+struct node *addatbeg(struct node *start,int data){
+    struct node *tmp;
+    tmp = (struct node *)malloc(sizeof(struct node));
+    tmp->info=data;
+    tmp->prev=NULL;
+    tmp->next=start;
+    start->prev=tmp;
+    start=tmp;
+    return start;
+}
+struct node *addtoempty(struct node *start,int data){
+    struct node *tmp;
+    tmp = (struct node *)malloc(sizeof(struct node));
+    tmp->info=data;
+    tmp->prev=NULL;
+    tmp->next=NULL;
+    start=tmp;
+    return start;
+}
