@@ -203,3 +203,7 @@ struct node *addbefore(struct node *start,int data,int item){
     printf("%d not present in the list\n",item);
     return start;
 }
+struct node *del(struct node *start,int data)
+{
+    struct node *tmp;
+}
