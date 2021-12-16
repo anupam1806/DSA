@@ -173,7 +173,7 @@ struct node *addafter(struct node *start,int data,int item){
     return start;
 }
 struct node *addbefore(struct node *start,int data,int item){
-    struct node *tmp,*p;
+    struct node *tmp,*q;
     if(start==NULL){
         printf("List is empty\n");
         return start;
@@ -206,4 +206,27 @@ struct node *addbefore(struct node *start,int data,int item){
 struct node *del(struct node *start,int data)
 {
     struct node *tmp;
+    if(start==NULL){
+        printf("List is empty\n");
+        return start;
+    }
+    if(start->next == NULL){
+        if(start->info == data){
+            tmp=start;
+            start=NULL;
+            free(tmp);
+            return start;
+        }
+        else{
+            printf("Element %d not found\n",data);
+            return start;
+        }
+        if(start->info == data){
+        tmp = start;
+        start=start->next;
+        start->prev=NULL;
+        free(tmp);
+        return start;
+    }
+    }
 }
