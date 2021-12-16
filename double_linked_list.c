@@ -233,7 +233,18 @@ struct node *del(struct node *start,int data)
         if(tmp->info==data){
             tmp->prev->next=tmp->next;
             tmp->next->prev=tmp->prev;
+            free(tmp);
+            return start;
         }
+        tmp=tmp->next;
     }
+    if(tmp->info == data){
+        tmp->prev->next=NULL;
+        free(tmp);
+        return(tmp);
+        return start;
+    }
+    printf("Element %d not found\n",data);
+    return start;
     }
 }
