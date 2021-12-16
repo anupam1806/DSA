@@ -228,5 +228,12 @@ struct node *del(struct node *start,int data)
         free(tmp);
         return start;
     }
+    tmp=start->next;
+    while(tmp->next!=NULL){
+        if(tmp->info==data){
+            tmp->prev->next=tmp->next;
+            tmp->next->prev=tmp->prev;
+        }
+    }
     }
 }
