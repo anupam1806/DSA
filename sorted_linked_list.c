@@ -12,7 +12,7 @@ int main(){
     int choice,data;
     struct node *start=NULL;
     while(1){
-        printf("1.Inser\n");
+        printf("1.Insert\n");
         printf("2.Display\n");
         printf("3.Search\n");
         printf("4.Exit\n");
